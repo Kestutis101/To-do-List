@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="script.js"></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h1>To Do List</h1>
+    <div class="main-container">
+      <form>
+        <div>
+          <label for="description">Description</label>
+          <input type="text" id="description" required maxlength="160" />
+        </div>
+        <div>
+          <label for="deadline">Deadline (Optional)</label>
+          <input type="datetime-local" id="deadline" />
+        </div>
+        <div>
+          <button type="submit" id="addButton">Add item</button>
+        </div>
+      </form>
+      <div class="buttons">
+        <button id="recentlyAddedBtn">Recently Added</button>
+        <button id="deadlineBtn">Deadline Date</button>
+        <button id="recentlyCompletedBtn">Recently completed</button>
+      </div>
+      <main></main>
+    </div>
+  </body>
+</html>
